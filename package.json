@@ -40,6 +40,7 @@
   },
   "dependencies": {
     "discord.js": "^12.3.1",
-    "dotenv": "^8.2.0"
+    "dotenv": "^8.2.0",
+    "fastify": "^3.2.1"
   }
 }
