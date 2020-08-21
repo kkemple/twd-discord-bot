@@ -1,27 +1,25 @@
-# TSDX Bootstrap
+# TWD Discord Bot
 
-This project was bootstrapped with [TSDX](https://github.com/jaredpalmer/tsdx).
+**This is the bot for [The Worst Dev Discord](https://theworst.dev/discord)**
 
-## Local Development
+> It pairs nicely with the [Gated Discord Server Template](https://theworst.dev/discord-server-template)
 
-Below is a list of commands you will probably find useful.
+## Current Functionality
 
-### `npm start` or `yarn start`
+- Ping command
+- Assign a given role to member based on message reaction (good for gating off a server until CoC is accepted)
+  - Currently looks for the ☑ (ballot_box_with_check) emoji.
 
-Runs the project in development/watch mode. Your project will be rebuilt upon changes. TSDX has a special logger for you convenience. Error messages are pretty printed and formatted for compatibility VS Code's Problems tab.
+## Running Locally
 
-<img src="https://user-images.githubusercontent.com/4060187/52168303-574d3a00-26f6-11e9-9f3b-71dbec9ebfcb.gif" width="600" />
+You'll need to define these env variables:
 
-Your library will be rebuilt if you make edits.
+```bash
+BOT_TOKEN=<BOT_TOKEN>
+MESSAGE_ID=<ID of message to monitor>
+ROLE_ID=<role to add to member>
+SERVER_ID=<ID of the Discord server>
+```
 
-### `npm run build` or `yarn build`
-
-Bundles the package to the `dist` folder.
-The package is optimized and bundled with Rollup into multiple formats (CommonJS, UMD, and ES Module).
-
-<img src="https://user-images.githubusercontent.com/4060187/52168322-a98e5b00-26f6-11e9-8cf6-222d716b75ef.gif" width="600" />
-
-### `npm test` or `yarn test`
-
-Runs the test watcher (Jest) in an interactive mode.
-By default, runs tests related to files changed since the last commit.
+- Run `yarn` to install packages
+- Run `yarn start` to start the server
